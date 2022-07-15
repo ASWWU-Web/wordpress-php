@@ -1,0 +1,38 @@
+/**
+ * Base Variables
+ */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+    /* Globals */
+    /* Theme fonts */
+    font-family: 'Open Sans', sans-serif;
+    --global--font-primary: var(--font-headings, 'Open Sans', Ubuntu, sans-serif);
+    --global--font-secondary: var(--font-base, 'Open Sans', Ubuntu, sans-serif);
+
+    /* Theme colors */
+    --carrot-orange: #ed9b40;
+    --celadon-blue: #0077aa;
+    --cool-grey: #9a96af;
+    --ebony: #656950;
+    --greenish-black: #040902;
+    --india-green: #358600;
+    --light-yellow: #f7ffe0;
+    --mint-cream: #f1f7ed;
+    --pewter-blue: #98b0c3;
+    --vivid-burgandy: #990033;
+
+    --dark-bg: #040902;
+    /* greenish-black */
+    --light-bg: #f1f7ed;
+    /* mint-cream */
+}
+
+/**
+ * Responsive Variables
+ */
+@media only screen and (min-width: 830px) {
+    :root {
+        --responsive--alignwide-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 1000px);
+    }
+}
