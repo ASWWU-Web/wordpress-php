@@ -8,7 +8,6 @@ Version: 1.0.0
 Tags: aswwu
 */
 
-
 /*
  * Font smoothing.
  * This is a niche setting that will not be available via Global Styles.
@@ -18,8 +17,8 @@ Tags: aswwu
 @import "variables.css";
 
 body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -29,40 +28,68 @@ body {
  */
 
 a {
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.25ch;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25ch;
 }
 
 /* Remove extra margin from articles on single post pages. */
 .single .site-main > article,
 .page .site-main > article {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-/* Remove some top padding if the first block on the page is a full-width image, cover, media & text, or group block. */
-
-.single.hide-post-and-page-titles .entry-content > .wp-block-image.alignfull:first-child,
-.page.hide-post-and-page-titles .entry-content > .wp-block-image.alignfull:first-child,
-.single.hide-post-and-page-titles .entry-content > .wp-block-cover.alignfull:first-child,
-.page.hide-post-and-page-titles .entry-content > .wp-block-cover.alignfull:first-child,
-.single.hide-post-and-page-titles .entry-content > .wp-block-media-text.alignfull:first-child,
-.page.hide-post-and-page-titles .entry-content > .wp-block-media-text.alignfull:first-child,
-.single.hide-post-and-page-titles .entry-content > .wp-block-group.has-background.alignfull:first-child,
-.page.hide-post-and-page-titles .entry-content > .wp-block-group.has-background.alignfull:first-child {
-	margin-top: calc(-1 * var(--global--spacing-vertical));
+/* Remove some top padding if the first block on the page is a full-width image,
+ cover, media & text, or group block. */
+.single.hide-post-and-page-titles
+  .entry-content
+  >.wp-block-image.alignfull:first-child,
+.page.hide-post-and-page-titles
+  .entry-content
+  >.wp-block-image.alignfull:first-child,
+.single.hide-post-and-page-titles
+  .entry-content
+  >.wp-block-cover.alignfull:first-child,
+.page.hide-post-and-page-titles
+  .entry-content
+  >.wp-block-cover.alignfull:first-child,
+.single.hide-post-and-page-titles
+  .entry-content
+  >.wp-block-media-text.alignfull:first-child,
+.page.hide-post-and-page-titles
+  .entry-content
+  >.wp-block-media-text.alignfull:first-child,
+.single.hide-post-and-page-titles
+  .entry-content
+  >.wp-block-group.has-background.alignfull:first-child,
+.page.hide-post-and-page-titles
+  .entry-content
+  > .wp-block-group.has-background.alignfull:first-child {
+  margin-top: calc(-1 * var(--global--spacing-vertical));
 }
 
-/* Remove some bottom padding if the last block on the page is a full-width image, cover, media & text, or group block. */
-
+/* Remove some bottom padding if the last block on the page is a full-width image,
+` cover, media & text, or group block. */
 .page.hide-site-footer .entry-content > .wp-block-image.alignfull:last-child,
 .page.hide-site-footer .entry-content > .wp-block-cover.alignfull:last-child,
-.page.hide-site-footer .entry-content > .wp-block-media-text.alignfull:last-child,
-.single.hide-site-footer.hide-site-footer .entry-content > .wp-block-group.has-background.alignfull:last-child,
-.single.hide-site-footer.hide-comments .entry-content > .wp-block-image.alignfull:last-child,
-.single.hide-site-footer.hide-comments .entry-content > .wp-block-cover.alignfull:last-child,
-.single.hide-site-footer.hide-comments .entry-content > .wp-block-media-text.alignfull:last-child,
-.single.hide-site-footer.hide-comments .entry-content > .wp-block-group.has-background.alignfull:last-child {
-	margin-bottom: calc(-1 * var(--global--spacing-vertical));
+.page.hide-site-footer
+  .entry-content
+  >.wp-block-media-text.alignfull:last-child,
+.single.hide-site-footer.hide-site-footer
+  .entry-content
+  >.wp-block-group.has-background.alignfull:last-child,
+.single.hide-site-footer.hide-comments
+  .entry-content
+  >.wp-block-image.alignfull:last-child,
+.single.hide-site-footer.hide-comments
+  .entry-content
+  >.wp-block-cover.alignfull:last-child,
+.single.hide-site-footer.hide-comments
+  .entry-content
+  >.wp-block-media-text.alignfull:last-child,
+.single.hide-site-footer.hide-comments
+  .entry-content
+  >.wp-block-group.has-background.alignfull:last-child {
+  margin-bottom: calc(-1 * var(--global-spacing-vertical));
 }
 
 /* Center-align headers and footers. */
@@ -72,5 +99,5 @@ a {
 .entry-footer,
 .site-info,
 .footer-menu {
-	text-align: center;
+  text-align: center;
 }
