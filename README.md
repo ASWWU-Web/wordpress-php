@@ -2,12 +2,7 @@
 
 ## Fonts
 
-aswwu.com uses [Open Sans](https://fonts.google.com/specimen/Open+Sans).
-
-For titles <!--TODO insert weight-->
-For primary text, <!--TODO insert weight-->
-for secondary text <!-- TODO insert weight-->
-
+For more information about the fonts used in aswwu.com, see the [fonts](docs/fonts.md) documentation.
 
 ## Resources
 
